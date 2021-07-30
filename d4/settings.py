@@ -14,6 +14,8 @@ from pathlib import Path
 
 from environs import Env
 
+from .logging import logging_config_dict
+
 
 # Load environment variables from .env
 env = Env()
@@ -85,6 +87,11 @@ DATABASES = {
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+
+
+# Logging
+# https://docs.djangoproject.com/en/3.2/topics/logging/
+LOGGING = logging_config_dict
 
 
 # Password validation

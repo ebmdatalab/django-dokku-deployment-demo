@@ -19,11 +19,21 @@ dj-email-url==1.0.2 \
 django==3.2.5 \
     --hash=sha256:3da05fea54fdec2315b54a563d5b59f3b4e2b1e69c3a5841dda35019c01855cd \
     --hash=sha256:c58b5f19c5ae0afe6d75cbdd7df561e6eb929339985dbbda2565e1cabb19a62e
-    # via -r requirements.prod.in
+    # via
+    #   -r requirements.prod.in
+    #   django-structlog
 django-cache-url==3.2.3 \
     --hash=sha256:5514ca3a2075c6b956b3d0a5c540654d32b004e76340d7bdabf6661135b5f218 \
     --hash=sha256:c1d45626ae8a206267c1263aa7a3461e2e186be2e939bcbd8c660e25851ddac8
     # via environs
+django-ipware==3.0.7 \
+    --hash=sha256:753f8214a16ccaac54ea977349a96e37b582a28a54065e00c1c46d530862c85e \
+    --hash=sha256:a18820ea2b98ff3f87b7530eb6346f5feb65d18e89397606aacc098fa7b93db2
+    # via django-structlog
+django-structlog==2.1.1 \
+    --hash=sha256:1531ca6a029d57babec5182a6b2ea9c33edfc6f9190d95826db14861e0cd4c2f \
+    --hash=sha256:177de7440873043dc9517862c0ea84713c16ff25849359351255e23fa42bb593
+    # via -r requirements.prod.in
 environs[django]==9.3.2 \
     --hash=sha256:2eb671afd37e6e9820131b918bbbcaa6658d0fb420ebf35bdfb750ae39c51a66 \
     --hash=sha256:6bef733b88cc901e787cf24fb2eaa72621b0656226ea4e332ab24ed0cba36fcf
@@ -44,3 +54,7 @@ sqlparse==0.4.1 \
     --hash=sha256:017cde379adbd6a1f15a61873f43e8274179378e95ef3fede90b5aa64d304ed0 \
     --hash=sha256:0f91fd2e829c44362cbcfab3e9ae12e22badaa8a29ad5ff599f9ec109f0454e8
     # via django
+structlog==21.1.0 \
+    --hash=sha256:62f06fc0ee32fb8580f0715eea66cb87271eb7efb0eaf9af6b639cba8981de47 \
+    --hash=sha256:d9d2d890532e8db83c6977a2a676fb1889922ff0c26ad4dc0ecac26f9fafbc57
+    # via django-structlog
