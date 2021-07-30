@@ -103,3 +103,6 @@ venv/
 
 # SQLite database
 *.sqlite3
+
+# Enviroment file
+.env
