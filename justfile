@@ -16,7 +16,7 @@ test ARGS="":
     . scripts/setup_functions
     dev_setup
 
-    python -m pytest --cov=. --cov-report html --cov-report term-missing:skip-covered {{ ARGS }}
+    python -m pytest --cov=. --cov-report html --cov-report term-missing:skip-covered --cov-fail-under=50 {{ ARGS }}
 
 # runs the format (black), sort (isort) and lint (flake8) check but does not change any files
 check:
