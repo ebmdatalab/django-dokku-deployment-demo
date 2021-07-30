@@ -6,3 +6,4 @@
 django
 django-structlog
 environs[django]
+gunicorn
