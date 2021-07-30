@@ -1,0 +1,18 @@
+<h1>Welcome to d4: the Datalab Django Dokku Deployment Demo</h1>
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/Cj8n4MfhjUc"
+  title="YouTube video player"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+
+<p>Here are the things in my database:</p>
+
+<ul>
+  {% for thing in things %}
+  <li>{{ thing.name }}</li>
+  {% endfor %}
+</ul>
